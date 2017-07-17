@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gaoyin.mvp">
+
+    <application
+        android:name="com.goyin.mvp.application.ShopAppLication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name="com.goyin.mvp.view.common.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.goyin.mvp.view.login.LoginActivity"></activity>
+
+        <!-- 适配规格 -->
+        <meta-data
+            android:name="design_width"
+            android:value="750">
+        </meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1334">
+        </meta-data>
+    </application>
+
+</manifest>
